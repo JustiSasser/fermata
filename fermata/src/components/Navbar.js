@@ -10,7 +10,8 @@ function Navbar() {
         <div className="flex space-x-6 items-center">
           <Link to="/" className="hover:text-green-300 transition">Home</Link>
           <div className="relative group">
-            <button className="hover:text-green-300 transition">Offerings</button>
+            {/* Replace button with Link */}
+            <Link to="/offerings" className="hover:text-green-300 transition">Offerings</Link>
             <div className="absolute hidden group-hover:flex flex-col bg-green-800 text-white mt-2 rounded shadow-lg">
               <Link to="/offerings/wellness" className="block px-4 py-2 hover:bg-green-700">Wellness</Link>
               <Link to="/offerings/faith" className="block px-4 py-2 hover:bg-green-700">Faith</Link>
