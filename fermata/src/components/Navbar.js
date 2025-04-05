@@ -8,7 +8,7 @@ function Navbar() {
         {/* Main Navigation Links */}
         <div className="flex space-x-6 items-center">
           <Link to="/" className="hover:text-green-300 transition">Home</Link>
-          <Link to="/offerings" className="hover:text-green-300 transition">Offerings</Link>
+          <a href="#offerings" className="hover:text-green-300 transition">Offerings</a>
         </div>
 
         {/* Sub-navigation for Offerings */}
