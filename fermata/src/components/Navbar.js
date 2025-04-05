@@ -5,9 +5,12 @@ function Navbar() {
   return (
     <nav className="bg-green-900 text-white p-4 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Branding */}
         <h1 className="text-2xl font-bold">
           <Link to="/">Fermata</Link>
         </h1>
+
+        {/* Navigation Links */}
         <div className="flex space-x-6 items-center">
           <Link to="/" className="hover:text-green-300 transition">Home</Link>
           <div className="relative group">

@@ -3,16 +3,7 @@ import React from 'react';
 function FermataHome() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 text-gray-800 font-sans">
-      <header className="bg-green-900 text-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-3xl font-extrabold tracking-wider">Fermata</h1>
-          <nav className="space-x-6 hidden md:block">
-            <a href="#offerings" className="hover:text-green-300 transition">Offerings</a>
-            <a href="#contact" className="hover:text-green-300 transition">Contact</a>
-          </nav>
-        </div>
-      </header>
-
+ 
       <section className="relative h-[600px] overflow-hidden">
         <img
           src="/images/hero.jpg"
