@@ -1,14 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function FermataHome() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 text-gray-800 font-sans">
       <header className="bg-green-900 text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-3xl font-extrabold tracking-wider">Fermata</h1>
+          <div className="flex items-center gap-4">
+            <img src="/images/logo.png" alt="Fermata logo" className="h-16 transition duration-300 hover:scale-110 hover:drop-shadow-lg cursor-pointer" />
+            <div>
+              <h1 className="text-4xl md:text-5xl text-white font-extrabold tracking-wide" style={{ fontFamily: "'Playfair Display', serif" }}>
+                Fermata
+              </h1>
+              <p className="text-sm text-green-200 tracking-widest uppercase mt-1 font-light">Lifestyle Reset Centre</p>
+            </div>
+          </div>
           <nav className="space-x-6 hidden md:block">
-            <a href="#offerings" className="hover:text-green-300 transition">Offerings</a>
-            <a href="#contact" className="hover:text-green-300 transition">Contact</a>
+            <Link to="#offerings" className="hover:text-green-300 transition">Offerings</Link>
+            <Link to="#contact" className="hover:text-green-300 transition">Contact</Link>
           </nav>
         </div>
       </header>
@@ -31,24 +40,26 @@ function FermataHome() {
         <h3 className="text-4xl font-bold text-center text-green-900 mb-14">Our Offerings</h3>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
           {[{
-            title: 'Wellness Programs', img: 'wellness.jpg', desc: '7–21 day immersive journeys to reset your body and mind through nutrition, rest, and movement.'
+            title: 'Wellness Programs', img: 'wellness.jpg', desc: '7–21 day immersive journeys to reset your body and mind through nutrition, rest, and movement.', link: '/offerings/wellness'
           },{
-            title: 'Faith-Based Retreats', img: 'faith.jpg', desc: 'Christian-guided experiences to reconnect your spirit with God and restore inner peace.'
+            title: 'Faith-Based Retreats', img: 'faith.jpg', desc: 'Christian-guided experiences to reconnect your spirit with God and restore inner peace.', link: '/offerings/faith'
           },{
-            title: 'Life Coaching & Mentoring', img: 'coaching.jpg', desc: 'Navigate transitions and rediscover purpose with one-on-one coaching in a natural setting.'
+            title: 'Life Coaching & Mentoring', img: 'coaching.jpg', desc: 'Navigate transitions and rediscover purpose with one-on-one coaching in a natural setting.', link: '/offerings/coaching'
           },{
-            title: 'Digital Detox', img: 'detox.jpg', desc: 'Unplug from distractions and reconnect with nature, peace, and your core self.'
+            title: 'Digital Detox', img: 'detox.jpg', desc: 'Unplug from distractions and reconnect with nature, peace, and your core self.', link: '/offerings/detox'
           },{
-            title: 'Residential Retreats', img: 'retreat.jpg', desc: 'Serene African-style lodgings for deep rest and spiritual rejuvenation.'
+            title: 'Residential Retreats', img: 'retreat.jpg', desc: 'Serene African-style lodgings for deep rest and spiritual rejuvenation.', link: '/offerings/retreat'
           },{
-            title: 'Workshops & Events', img: 'workshop.jpg', desc: 'Engage in inspiring sessions focused on journaling, habits, and community growth.'
-          }].map(({ title, img, desc }) => (
+            title: 'Workshops & Events', img: 'workshop.jpg', desc: 'Engage in inspiring sessions focused on journaling, habits, and community growth.', link: '/offerings/workshop'
+          }].map(({ title, img, desc, link }) => (
             <div key={title} className="bg-green-50 rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
-              <img src={`/images/${img}`} alt={title} className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <h4 className="text-2xl font-bold mb-2 text-green-800">{title}</h4>
-                <p className="text-gray-700 text-sm leading-relaxed">{desc}</p>
-              </div>
+              <Link to={link}>
+                <img src={`/images/${img}`} alt={title} className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h4 className="text-2xl font-bold mb-2 text-green-800">{title}</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">{desc}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
