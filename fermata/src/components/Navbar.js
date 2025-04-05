@@ -6,13 +6,13 @@ function Navbar() {
     <nav className="bg-green-900 text-white p-4 shadow-lg">
       <div className="max-w-7xl mx-auto">
         {/* Main Navigation Links */}
-        <div className="flex justify-between items-center">
+        <div className="flex space-x-6 items-center">
           <Link to="/" className="hover:text-green-300 transition">Home</Link>
           <Link to="/offerings" className="hover:text-green-300 transition">Offerings</Link>
         </div>
 
         {/* Sub-navigation for Offerings */}
-        <div className="flex justify-center space-x-6 mt-2">
+        <div className="flex justify-start space-x-6 mt-2">
           <Link to="/offerings/wellness" className="hover:text-green-300 transition">Wellness</Link>
           <Link to="/offerings/faith" className="hover:text-green-300 transition">Faith</Link>
           <Link to="/offerings/coaching" className="hover:text-green-300 transition">Coaching</Link>
