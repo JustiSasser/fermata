@@ -1,0 +1,51 @@
+Perfect — using PowerShell (ps) is absolutely fine, Justi. The commands I gave will work just the same there. Here's the updated process tailored for PowerShell on Windows:
+
+✅ Step 1: Install Node.js & npm
+Visit: https://nodejs.org
+
+Download the LTS version (recommended for most users).
+
+Run the installer:
+
+Accept defaults ✅
+
+Let it install both Node.js and npm
+
+Once installed, open PowerShell and type:
+
+ps
+Copy
+Edit
+node -v
+npm -v
+You should see versions like:
+
+Copy
+Edit
+v20.10.0
+10.5.0
+✅ Step 2: Set Up and Run the Project
+Open PowerShell
+
+Navigate to your extracted Fermata folder:
+
+ps
+Copy
+Edit
+cd "C:\path\to\fermata"
+Run the following to set up React:
+
+ps
+Copy
+Edit
+npx create-react-app . --template cra-template
+Once setup completes, overwrite the default App.js with the one from the extracted ZIP (src\App.js).
+
+Start the app:
+
+ps
+Copy
+Edit
+npm start
+Your browser should open at:
+👉 http://localhost:3000
