@@ -7,7 +7,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Branding */}
         <h1 className="text-2xl font-bold">
-          <Link to="/">Fermata</Link>
+          <Link to="/">Fermata Lifestyle Reset Centre</Link>
         </h1>
 
         {/* Navigation Links */}
