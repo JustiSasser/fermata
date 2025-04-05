@@ -3,7 +3,15 @@ function FermataHome() {
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 text-gray-800 font-sans">
       <header className="bg-green-900 text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-3xl font-extrabold tracking-wider">Fermata</h1>
+          <div className="flex items-center gap-4">
+            <img src="/images/logo.png" alt="Fermata logo" className="h-12 transition duration-300 hover:scale-110 hover:drop-shadow-lg cursor-pointer" />
+            <div>
+              <h1 className="text-4xl md:text-5xl text-white font-extrabold tracking-wide" style={{ fontFamily: "'Playfair Display', serif" }}>
+                Fermata
+              </h1>
+              <p className="text-sm text-green-200 tracking-widest uppercase mt-1 font-light">Lifestyle Reset Centre</p>
+            </div>
+          </div>
           <nav className="space-x-6 hidden md:block">
             <a href="#offerings" className="hover:text-green-300 transition">Offerings</a>
             <a href="#contact" className="hover:text-green-300 transition">Contact</a>
