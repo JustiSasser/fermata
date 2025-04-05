@@ -4,7 +4,7 @@ function FermataHome() {
       <header className="bg-green-900 text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <img src="/images/logo.png" alt="Fermata logo" className="h-12 transition duration-300 hover:scale-110 hover:drop-shadow-lg cursor-pointer" />
+            <img src="/images/logo.png" alt="Fermata logo" className="h-16 transition duration-300 hover:scale-110 hover:drop-shadow-lg cursor-pointer" />
             <div>
               <h1 className="text-4xl md:text-5xl text-white font-extrabold tracking-wide" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Fermata
