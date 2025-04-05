@@ -8,14 +8,19 @@ function Navbar() {
         <h1 className="text-2xl font-bold">
           <Link to="/">Fermata</Link>
         </h1>
-        <div className="space-x-6">
+        <div className="flex space-x-6 items-center">
           <Link to="/" className="hover:text-green-300 transition">Home</Link>
-          <Link to="/offerings/wellness" className="hover:text-green-300 transition">Wellness</Link>
-          <Link to="/offerings/faith" className="hover:text-green-300 transition">Faith</Link>
-          <Link to="/offerings/coaching" className="hover:text-green-300 transition">Coaching</Link>
-          <Link to="/offerings/detox" className="hover:text-green-300 transition">Detox</Link>
-          <Link to="/offerings/retreat" className="hover:text-green-300 transition">Retreat</Link>
-          <Link to="/offerings/workshop" className="hover:text-green-300 transition">Workshop</Link>
+          <div className="relative group">
+            <button className="hover:text-green-300 transition">Offerings</button>
+            <div className="absolute hidden group-hover:block bg-green-800 text-white mt-2 rounded shadow-lg">
+              <Link to="/offerings/wellness" className="block px-4 py-2 hover:bg-green-700">Wellness</Link>
+              <Link to="/offerings/faith" className="block px-4 py-2 hover:bg-green-700">Faith</Link>
+              <Link to="/offerings/coaching" className="block px-4 py-2 hover:bg-green-700">Coaching</Link>
+              <Link to="/offerings/detox" className="block px-4 py-2 hover:bg-green-700">Detox</Link>
+              <Link to="/offerings/retreat" className="block px-4 py-2 hover:bg-green-700">Retreat</Link>
+              <Link to="/offerings/workshop" className="block px-4 py-2 hover:bg-green-700">Workshop</Link>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
