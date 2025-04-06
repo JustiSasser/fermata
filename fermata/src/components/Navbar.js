@@ -21,7 +21,15 @@ function Navbar() {
         {/* Mobile Navigation */}
         <MobileNav />
 
-
+      {/* Sub-navigation for Offerings */}
+      <div className="flex justify-start space-x-6 mt-2">
+        <Link to="/offerings/wellness" className="hover:text-green-300 transition">Wellness</Link>
+        <Link to="/offerings/faith" className="hover:text-green-300 transition">Faith</Link>
+        <Link to="/offerings/coaching" className="hover:text-green-300 transition">Coaching</Link>
+        <Link to="/offerings/detox" className="hover:text-green-300 transition">Detox</Link>
+        <Link to="/offerings/retreat" className="hover:text-green-300 transition">Retreat</Link>
+        <Link to="/offerings/workshop" className="hover:text-green-300 transition">Workshop</Link>
+      </div>
     </nav>
   );
 }
