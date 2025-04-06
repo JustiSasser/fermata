@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function FermataHome() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 text-gray-800 font-sans">
-      {/* Hero Section */}
-      <section id="home" className="relative h-[600px] overflow-hidden">
+       <section id="home" className="relative h-[600px] overflow-hidden">
+       {/* Hero Section */}
         <img
           src="/images/hero.jpg"
           alt="Nature Retreat"
@@ -19,8 +19,8 @@ function FermataHome() {
         </div>
       </section>
 
-      {/* Offerings Section */}
       <section id="offerings" className="py-20 px-6 bg-white">
+        {/* Offerings Section */}
         <h3 className="text-4xl font-bold text-center text-green-900 mb-14">Our Offerings</h3>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
           {[
@@ -61,28 +61,22 @@ function FermataHome() {
               path: '/offerings/workshop',
             },
           ].map(({ title, img, desc, path }) => (
-            <div
+            <Link
+              to={path}
               key={title}
-              className="bg-green-50 rounded-2xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 overflow-hidden"
+              className="block bg-green-50 rounded-2xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 overflow-hidden"
             >
               <img src={`/images/${img}`} alt={title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h4 className="text-2xl font-bold mb-2 text-green-800">{title}</h4>
                 <p className="text-gray-700 text-sm leading-relaxed">{desc}</p>
-                <Link
-                  to={path}
-                  className="text-green-600 font-medium hover:underline mt-4 inline-block"
-                >
-                  Learn More
-                </Link>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-r from-green-100 to-green-200 text-center" id="contact">
+      <section id="contact" className="py-20 bg-gradient-to-r from-green-100 to-green-200 text-center">
         <div className="max-w-3xl mx-auto">
           <h3 className="text-4xl font-bold text-green-900 mb-6">Start Your Reset Journey</h3>
           <p className="text-lg text-gray-800 mb-8">
@@ -97,22 +91,7 @@ function FermataHome() {
             Contact Us on WhatsApp
           </a>
         </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-green-800 text-white p-6 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} Fermata Lifestyle Reset Centre. All rights reserved.</p>
-      </footer>
-
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/27832933334?text=Hi%20Fermata!"
-        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 p-4 rounded-full shadow-lg text-white"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        💬
-      </a>
+      </section>      
     </main>
   );
 }
