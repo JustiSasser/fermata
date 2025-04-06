@@ -10,8 +10,8 @@ function FermataHome() {
           className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
-          <h2 className="text-5xl font-bold mb-4 drop-shadow-xl animate-fade-in">Pause. Reflect. Restart.</h2>
-          <p className="text-xl max-w-2xl animate-fade-in delay-300">
+          <h2 className="text-5xl font-bold mb-4 drop-shadow-xl animate-fade-in-up">Pause. Reflect. Restart.</h2>
+          <p className="text-xl max-w-2xl animate-fade-in-up delay-300">
             A sanctuary rooted in African soil, guiding you through healing and transformation—mind, body, and spirit.
           </p>
         </div>
@@ -61,9 +61,19 @@ function FermataHome() {
         </div>
       </section>
 
-      <footer className="bg-green-900 text-white p-6 text-center text-sm">
+      <footer className="bg-green-800 text-white p-6 text-center text-sm">
         <p>&copy; {new Date().getFullYear()} Fermata Lifestyle Reset Centre. All rights reserved.</p>
       </footer>
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/27832933334?text=Hi%20Fermata!"
+        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 p-4 rounded-full shadow-lg text-white"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💬
+      </a>
     </main>
   );
 }
