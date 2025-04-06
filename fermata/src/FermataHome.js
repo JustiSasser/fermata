@@ -1,15 +1,11 @@
 import React from 'react';
-import useToggle from '../utils/useToggle';
+
 
 function FermataHome() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 text-gray-800 font-sans">
       <section className="relative h-[600px] overflow-hidden">
-        <img
-          src="/images/hero.jpg"
-          alt="Nature Retreat"
-          className="object-cover w-full h-full"
-        />
+
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
           <h2 className="text-5xl font-bold mb-4 drop-shadow-xl animate-fade-in-up">Pause. Reflect. Restart.</h2>
           <p className="text-xl max-w-2xl animate-fade-in-up delay-300">
