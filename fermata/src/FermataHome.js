@@ -3,7 +3,6 @@ import React from 'react';
 function FermataHome() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 text-gray-800 font-sans">
- 
       <section className="relative h-[600px] overflow-hidden">
         <img
           src="/images/hero.jpg"
@@ -34,7 +33,7 @@ function FermataHome() {
           },{
             title: 'Workshops & Events', img: 'workshop.jpg', desc: 'Engage in inspiring sessions focused on journaling, habits, and community growth.'
           }].map(({ title, img, desc }) => (
-            <div key={title} className="bg-green-50 rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden">
+            <div key={title} className="bg-green-50 rounded-2xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 overflow-hidden">
               <img src={`/images/${img}`} alt={title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h4 className="text-2xl font-bold mb-2 text-green-800">{title}</h4>
